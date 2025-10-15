@@ -139,7 +139,7 @@ async function getJoinedChannels() {
   try {
     const activeRepo = AppDataSource.getRepository(VwActiveUserTokensInfo);
 
-    const result = await activeRepo.find();
+    const result = await activeRepo.find({where: {platformId:1}});
 
     const channelHasJoin = result.map((row) => ({
       channel: row.nameLogin,

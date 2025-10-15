@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 const { saveTokenToDB } = require('./database');
-require('dotenv').config();
+require('dotenv').config({ debug: false });
 
 const clientId = process.env.TWITCH_CLIENT_ID;
 const clientSecret = process.env.TWITCH_CLIENT_SECRET;

@@ -74,7 +74,6 @@ const updateTokenInDB = async (channelId, accessToken, refreshToken) => {
     token.updatedAt = new Date();
 
     await repo.save(token);
-    console.log(`✅ Token updated successfully for channel ${channelId}`);
   } catch (err) {
     console.error(`❌ Error while updating token:`, err.message);
   }
@@ -96,7 +95,6 @@ const updateTokenInDBBot = async (id, accessToken, refreshToken) => {
     bot.refreshToken = refreshToken;
     bot.expiresIn = Math.floor(Date.now() / 1000); // New timestamp
     await repo.save(bot);
-    console.log(`✅ Bot token updated successfully for ${id}`);
   } catch (err) {
     console.error(`❌ Error while updating bot token for ${id}:`, err.message);
   }

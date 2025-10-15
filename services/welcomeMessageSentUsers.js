@@ -1,8 +1,7 @@
 const { ApiClient } = require('@twurple/api');
 const { AppTokenAuthProvider } = require('@twurple/auth');
 const { fetchSettingIsLive, isBotUsername, fetchSetting, insertJoinLive } = require('./database');
-require('dotenv').config();
-
+require('dotenv').config();require('dotenv').config({ debug: false });
 // إعداد عميل Twurple (بدّل هذه القيم بما يناسبك)
 const clientId =  process.env.TWITCH_CLIENT_ID;
 const clientSecret = process.env.TWITCH_CLIENT_SECRET;

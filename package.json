@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"nodemon Server.js\" \"node Refrech_Token.js\""
+    "start": "concurrently \"nodemon --no-deprecation --quiet  Server.js\" \"node Refrech_Token.js\""
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
     "bcryptjs": "^3.0.2",
     "chalk": "^5.5.0",
     "date-fns": "^4.1.0",
-    "dotenv": "^17.2.1",
+    "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "fuse.js": "^7.1.0",
     "fuzzball": "^2.2.2",

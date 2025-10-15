@@ -47,7 +47,7 @@ const VwActiveUserTokensInfo = new EntitySchema({
       nullable: true,
       name: "PROFILE_IMAGE_URL",
     },
-    isjoin: {
+    isJoin: {
       type: Number,
       nullable: true,
       name: "ISJOIN",

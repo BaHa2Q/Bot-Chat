@@ -1,7 +1,7 @@
 const { ApiClient } = require('@twurple/api');
 const { StaticAuthProvider } = require('@twurple/auth');
 const { getJoinedChannels } = require('./database');
-require('dotenv').config();
+require('dotenv').config({ debug: false });
 
 const apiClients = new Map();
 
