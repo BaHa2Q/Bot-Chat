@@ -1,0 +1,46 @@
+{
+  "name": "twitch-chat-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon Server.js\" \"node Refrech_Token.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@twurple/api": "^7.4.0",
+    "@twurple/auth": "^7.4.0",
+    "@twurple/auth-tmi": "^7.4.0",
+    "@twurple/easy-bot": "^7.4.0",
+    "@twurple/eventsub-ws": "^7.4.0",
+    "axios": "^1.11.0",
+    "bcryptjs": "^3.0.2",
+    "chalk": "^5.5.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "fuse.js": "^7.1.0",
+    "fuzzball": "^2.2.2",
+    "ioredis": "^5.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "oracledb": "^6.9.0",
+    "p-limit": "^6.2.0",
+    "pm2": "^6.0.8",
+    "qs": "^6.14.0",
+    "reflect-metadata": "^0.2.2",
+    "socket.io": "^4.8.1",
+    "tmi.js": "^1.8.5",
+    "typeorm": "^0.3.25",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.0",
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "description": ""
+}
